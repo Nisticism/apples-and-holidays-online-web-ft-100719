@@ -74,6 +74,8 @@ def all_supplies_in_holidays(holiday_hash)
           holidays_array[index] = words.capitalize
         end
         holidays_s = holidays_array.join(" ")
+      else 
+        holidays_s = holidays_s.capitalize
       end
       puts "  #{holidays_s}: #{holiday_values.join(", ")}"
     end
