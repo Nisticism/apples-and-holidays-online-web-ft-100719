@@ -74,6 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
         holidays_array.each do |words|
           holidays_array[counter] = words.capitalize
           counter += 1
+          binding.pry
         end
         holidays_s = holidays_array.join(" ")
       end
