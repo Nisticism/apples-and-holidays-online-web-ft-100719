@@ -70,11 +70,8 @@ def all_supplies_in_holidays(holiday_hash)
       holidays_s = holidays.to_s
       if holidays_s.include?("_")
         holidays_array = holidays_s.split("_")
-        counter = 0
-        holidays_array.each do |words|
-          holidays_array[counter] = words.capitalize
-          counter += 1
-          binding.pry
+        holidays_array.each_with_index do |index, words|
+          holidays_array[index] = words.capitalize
         end
         holidays_s = holidays_array.join(" ")
       end
