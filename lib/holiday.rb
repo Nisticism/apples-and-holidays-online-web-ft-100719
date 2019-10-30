@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
       holidays_s = holidays.to_s
       if holidays_s.include?("_")
         holidays_array = holidays_s.split("_")
-        holidays_array.each_with_index do |index, words|
+        holidays_array.each_with_index do |words, index|
           holidays_array[index] = words.capitalize
         end
         holidays_s = holidays_array.join(" ")
