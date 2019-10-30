@@ -75,11 +75,12 @@ def all_supplies_in_holidays(holiday_hash)
         end
         holidays_s = holidays_array.join(" ")
       end
-      puts "  #{holidays_s.capitalize}: #{holiday_values.join(", ")}"
+      puts "  #{holidays_s}: #{holiday_values.join(", ")}"
     end
   end
-
 end
+
+
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
